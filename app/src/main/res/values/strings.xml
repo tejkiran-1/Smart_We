@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Smart We</string>
+    <string name="home">Home</string>
+    <string name="notification">Notification</string>
+    <string name="plus">Add</string>
+    <string name="search">Search</string>
+    <string name="profile">Profile</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="add_fragment">Add fragment</string>
+    <string name="home_fragment">Home Fragment</string>
+    <string name="notification_fragment_title">Notification</string>
+    <string name="profile_fragment">Profile Fragment</string>
+    <string name="search_fragment">Search Fragment</string>
+    <string name="add_icon">add_icon</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

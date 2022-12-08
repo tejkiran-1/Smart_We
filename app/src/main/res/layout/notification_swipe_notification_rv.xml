@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/search_profile_image_icon"
+        android:layout_width="@dimen/_50mdp"
+        android:layout_height="@dimen/_50mdp"
+        android:layout_marginTop="8dp"
+        android:padding="4dp"
+        android:src="@drawable/profile_pic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/orange_circle_view"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/orange_circle"
+        app:layout_constraintBottom_toBottomOf="@+id/search_profile_image_icon"
+        app:layout_constraintEnd_toEndOf="@+id/search_profile_image_icon"
+        app:layout_constraintStart_toStartOf="@+id/search_profile_image_icon"
+        app:layout_constraintTop_toTopOf="@+id/search_profile_image_icon" />
+
+    <TextView
+        android:id="@+id/notification_tv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="16dp"
+        android:text="Tejkiran Kushwaha mentioned you in a comment."
+        android:textColor="@color/black"
+        android:textSize="@dimen/_14font_mdp"
+        app:layout_constraintBottom_toBottomOf="@+id/search_profile_image_icon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/search_profile_image_icon"
+        app:layout_constraintTop_toTopOf="@+id/search_profile_image_icon"
+        app:layout_constraintVertical_bias="0.18" />
+
+    <TextView
+        android:id="@+id/time_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="just now"
+        app:layout_constraintStart_toStartOf="@+id/notification_tv"
+        app:layout_constraintTop_toBottomOf="@+id/notification_tv" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

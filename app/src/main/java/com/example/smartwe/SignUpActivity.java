@@ -26,7 +26,7 @@ public class SignUpActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         signUpBinding = ActivitySignUpBinding.inflate(getLayoutInflater()); //binding, so it wont require findviewbyid,
-                                                                            // we can use any view by using signupbinding. .
+                                                                            // we can use any view by using signupbinding
         setContentView(signUpBinding.getRoot());
 
         auth = FirebaseAuth.getInstance();
@@ -46,7 +46,9 @@ public class SignUpActivity extends AppCompatActivity {
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if (task.isSuccessful()) {
                             UserDataModel userModel = new UserDataModel(name, profession, email, password);
-                            String currUserId = task.getResult().getUser().getUid(); //TODO: have to deal with the not null value
+                            String currUserId = task.getResult().getUser().getUid();
+
+                            //TODO: have to deal with the not null value
                             db.getReference().child("User").child(currUserId).setValue(userModel);
                             Toast.makeText(SignUpActivity.this, "User Data Saved", Toast.LENGTH_SHORT).show();
                             Intent intent = new Intent(SignUpActivity.this, MainActivity.class);

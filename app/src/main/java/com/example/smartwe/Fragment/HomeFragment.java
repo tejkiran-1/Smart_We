@@ -1,5 +1,6 @@
 package com.example.smartwe.Fragment;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -9,9 +10,11 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 
 import com.example.smartwe.Adapter.PostDashboardAdapter;
 import com.example.smartwe.Adapter.StoryAdapter;
+import com.example.smartwe.IotLivingRoom;
 import com.example.smartwe.Model.PostsDashboardModel;
 import com.example.smartwe.Model.StoryModel;
 import com.example.smartwe.R;
@@ -23,6 +26,7 @@ public class HomeFragment extends Fragment {
     RecyclerView storyRV, postDashboardRV;
     ArrayList<StoryModel> list;
     ArrayList<PostsDashboardModel> postsDashboardModels;
+
 
     public HomeFragment() {
         // Required empty public constructor
@@ -39,6 +43,15 @@ public class HomeFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_home, container, false);
+
+        // For IoT home icon
+        ImageView iotHomeIcon = view.findViewById(R.id.iot_home_icon);
+        view.findViewById(R.id.iot_home_icon).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getContext(), IotLivingRoom.class));
+            }
+        });
 
         storyRV = view.findViewById(R.id.story_RV);
         list = new ArrayList<>();

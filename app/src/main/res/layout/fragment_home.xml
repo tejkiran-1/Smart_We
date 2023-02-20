@@ -199,6 +199,16 @@
                     />
 
             </LinearLayout>
+
+            <ImageView
+                android:id="@+id/iot_home_icon"
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:src="@drawable/icons_iot_home"
+                app:layout_constraintBottom_toBottomOf="@+id/search_profile_image_icon"
+                app:layout_constraintEnd_toStartOf="@+id/search_profile_image_icon"
+                app:layout_constraintStart_toEndOf="@+id/app_title"
+                app:layout_constraintTop_toTopOf="@+id/search_profile_image_icon" />
         </androidx.constraintlayout.widget.ConstraintLayout>
 
     </ScrollView>

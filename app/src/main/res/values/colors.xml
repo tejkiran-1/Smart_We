@@ -18,5 +18,8 @@
     <color name="lightGreen">#ECF8F6</color>
     <color name="silver">#C0C0C0</color>
     <color name="darkGray">#7C7B7B</color>
+    <color name="bgfs">#1E1E1E</color>
+    <color name="emailId">#666680</color>
+    <color name="Orange">#FF7966</color>
 
 </resources>

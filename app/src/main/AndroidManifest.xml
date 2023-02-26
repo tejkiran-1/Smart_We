@@ -13,6 +13,9 @@
         android:theme="@style/Theme.SmartWe"
         tools:targetApi="31">
         <activity
+            android:name=".LaunchScreen"
+            android:exported="false" />
+        <activity
             android:name=".IotLivingRoom"
             android:exported="false" />
         <activity

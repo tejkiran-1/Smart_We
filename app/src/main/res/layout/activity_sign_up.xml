@@ -35,8 +35,10 @@
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/name_TextInputLayout"
-        android:layout_width="350dp"
+        android:layout_width="0dp"
         android:layout_height="0dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
         android:layout_marginBottom="28dp"
         android:background="@drawable/input_text_background"
         android:paddingTop="0dp"
@@ -44,6 +46,7 @@
         app:boxBackgroundMode="outline"
         app:layout_constraintBottom_toTopOf="@+id/profession_TextInputLayout"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.508"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/stayConnnectedText">
 
@@ -88,8 +91,10 @@
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/email_TextInputLayout"
-        android:layout_width="350dp"
+        android:layout_width="0dp"
         android:layout_height="0dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
         android:layout_marginBottom="26dp"
         android:background="@drawable/input_text_background"
         android:paddingTop="0dp"

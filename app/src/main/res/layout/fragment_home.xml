@@ -5,6 +5,7 @@
     android:id="@+id/frameLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/bgfs"
     tools:context=".Fragment.HomeFragment">
 
     <ScrollView
@@ -26,7 +27,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
                 android:text="@string/app_name"
-                android:textColor="@color/black"
+                android:textColor="@color/white"
                 android:textSize="@dimen/_24font_mdp"
                 android:textStyle="bold"
                 app:layout_constraintBottom_toBottomOf="@+id/search_profile_image_icon"

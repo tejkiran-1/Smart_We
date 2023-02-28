@@ -12,7 +12,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:srcCompat="@drawable/launchscreen1"
-        tools:layout_editor_absoluteY="72dp" />
+        tools:layout_editor_absoluteY="138dp" />
 
     <ImageView
         android:id="@+id/imageView3"
@@ -20,81 +20,112 @@
         android:layout_height="wrap_content"
         app:srcCompat="@drawable/launchscreen2"
         tools:layout_editor_absoluteX="299dp"
-        tools:layout_editor_absoluteY="321dp" />
+        tools:layout_editor_absoluteY="390dp" />
+
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/launchscreen2"
+        tools:layout_editor_absoluteX="299dp"
+        tools:layout_editor_absoluteY="-61dp" />
 
     <ImageView
         android:id="@+id/imageView5"
+        android:layout_width="78dp"
+        android:layout_height="116dp"
+        android:rotation="0"
+        app:srcCompat="@drawable/launchscreenact1"
+        tools:layout_editor_absoluteX="102dp"
+        tools:layout_editor_absoluteY="372dp" />
+
+    <ImageView
+        android:id="@+id/imageView9"
         android:layout_width="205dp"
         android:layout_height="204dp"
         android:rotation="0"
         app:srcCompat="@drawable/launchscreenact1"
         tools:layout_editor_absoluteX="133dp"
-        tools:layout_editor_absoluteY="328dp" />
+        tools:layout_editor_absoluteY="320dp" />
 
     <ImageView
         android:id="@+id/imageView6"
         android:layout_width="146dp"
-        android:layout_height="146dp"
+        android:layout_height="64dp"
         android:rotation="0"
         app:srcCompat="@drawable/launchscreen3"
-        tools:layout_editor_absoluteX="54dp"
-        tools:layout_editor_absoluteY="272dp" />
+        tools:layout_editor_absoluteX="55dp"
+        tools:layout_editor_absoluteY="338dp" />
 
     <ImageView
         android:id="@+id/imageView7"
         android:layout_width="128dp"
-        android:layout_height="127dp"
+        android:layout_height="64dp"
         android:rotation="0"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.554"
-        app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/launchscreen4"
-        tools:layout_editor_absoluteY="237dp" />
+        tools:layout_editor_absoluteX="157dp"
+        tools:layout_editor_absoluteY="274dp" />
 
     <ImageView
         android:id="@+id/imageView8"
-        android:layout_width="128dp"
-        android:layout_height="127dp"
+        android:layout_width="79dp"
+        android:layout_height="76dp"
         android:rotation="0"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.554"
-        app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/launchscreen4"
-        tools:layout_editor_absoluteY="237dp" />
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/getStarted"
-        android:layout_width="350dp"
-        android:layout_height="48dp"
-        android:background="@drawable/input_text_background"
-        android:backgroundTint="@color/Orange"
-        android:text="Get Started"
-        android:textColor="@color/white"
-        android:textSize="18sp"
-        tools:layout_editor_absoluteX="30dp"
-        tools:layout_editor_absoluteY="583dp" />
+        tools:layout_editor_absoluteX="133dp"
+        tools:layout_editor_absoluteY="280dp" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="51dp"
+        android:layout_height="43dp"
+        android:rotation="0"
+        app:srcCompat="@drawable/launchscreen4"
+        tools:layout_editor_absoluteX="133dp"
+        tools:layout_editor_absoluteY="252dp" />
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="51dp"
+        android:layout_height="64dp"
+        android:rotation="0"
+        app:srcCompat="@drawable/launchscreen4"
+        tools:layout_editor_absoluteX="212dp"
+        tools:layout_editor_absoluteY="209dp" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="159dp"
+        android:layout_height="82dp"
+        android:rotation="0"
+        app:srcCompat="@drawable/launchscreen4"
+        tools:layout_editor_absoluteX="179dp"
+        tools:layout_editor_absoluteY="295dp" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/getStarted2"
-        android:layout_width="350dp"
-        android:layout_height="48dp"
+        android:layout_width="250dp"
+        android:layout_height="52dp"
         android:background="@drawable/input_text_background"
         android:backgroundTint="@color/Orange"
         android:text="Get Started"
         android:textColor="@color/white"
         android:textSize="18sp"
-        tools:layout_editor_absoluteX="30dp"
-        tools:layout_editor_absoluteY="583dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="573dp" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/iHaveAnAccount"
-        android:layout_width="350dp"
-        android:layout_height="48dp"
+        android:id="@+id/iHaveAnAccout"
+        android:layout_width="250dp"
+        android:layout_height="52dp"
         android:background="@drawable/input_text_background"
         android:backgroundTint="@color/Orange"
-        android:text="Get Started"
+        android:text="I have an account"
         android:textColor="@color/white"
         android:textSize="18sp"
-        tools:layout_editor_absoluteX="30dp"
-        tools:layout_editor_absoluteY="653dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="639dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -6,6 +6,7 @@
     android:id="@+id/profileLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/bgfs"
     tools:context=".Fragment.ProfileFragment">
 
     <LinearLayout
@@ -87,9 +88,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
-        android:fontFamily="@font/acme"
         android:text="Tejkiran Kushwaha"
-        android:textColor="@color/black"
+        android:textColor="@color/white"
         android:textSize="@dimen/_14font_mdp"
         app:layout_constraintEnd_toEndOf="@+id/profile_profile_image_icon"
         app:layout_constraintHorizontal_bias="0.5"
@@ -101,6 +101,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Software Developer"
+        android:textColor="@color/white"
         android:textSize="@dimen/_10font_mdp"
         app:layout_constraintEnd_toEndOf="@+id/profile_user_name_tv"
         app:layout_constraintStart_toStartOf="@+id/profile_user_name_tv"
@@ -304,6 +305,7 @@
         android:layout_marginTop="10dp"
         android:layout_marginEnd="8dp"
         android:gravity="center"
+        android:textColor="@color/white"
         android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt uealiqua. "
         android:textSize="@dimen/_14font_mdp"
         app:layout_constraintEnd_toEndOf="@+id/cardView"
@@ -315,9 +317,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:fontFamily="@font/acme"
+
         android:text="My Friends"
-        android:textColor="@color/black"
+        android:textColor="@color/white"
         android:textSize="18sp"
         app:layout_constraintStart_toStartOf="@+id/profile_person_description_tv"
         app:layout_constraintTop_toBottomOf="@+id/profile_person_description_tv" />

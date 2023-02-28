@@ -39,8 +39,8 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:rbb_activeItemType="text"
-        app:rbb_backgroundColor="@color/green"
-        app:rbb_indicatorColor="@color/orange"
+        app:rbb_backgroundColor="@color/Orange"
+        app:rbb_indicatorColor="@color/white"
         app:rbb_tabs="@xml/tabs"
         app:rbb_textColor="@color/orange" />
 

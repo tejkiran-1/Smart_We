@@ -50,7 +50,7 @@ import okhttp3.RequestBody;
 import com.example.smartwe.Fragment.HomeFragment;
 
 public class IotLivingRoom extends AppCompatActivity {
-
+    public static String SERVERURL;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -69,10 +69,50 @@ public class IotLivingRoom extends AppCompatActivity {
         one.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                SERVERURL = "https://project.jagadeeshk.me/three";
+                new HttpPostRequest().execute();
             }
         });
 
 
     }
+
+
+
+
+    private class HttpPostRequest extends AsyncTask<Void, Void, String> {
+        @Override
+        protected String doInBackground(Void... voids) {
+            try {
+                URL url = new URL(SERVERURL);
+                HttpURLConnection conn = (HttpURLConnection) url.openConnection();
+                conn.setRequestMethod("POST");
+                conn.setDoOutput(true);
+
+                OutputStreamWriter writer = new OutputStreamWriter(conn.getOutputStream());
+                writer.write("data=Hello World");
+                writer.flush();
+                writer.close();
+
+                InputStream inputStream = conn.getInputStream();
+                BufferedReader reader = new BufferedReader(new InputStreamReader(inputStream));
+                StringBuilder result = new StringBuilder();
+                String line;
+                while ((line = reader.readLine()) != null) {
+                    result.append(line);
+                }
+
+                return result.toString();
+            } catch (IOException e) {
+                e.printStackTrace();
+                return "Error: " + e.getMessage();
+            }
+        }
+
+
+    }
 }
+
+
+
+
